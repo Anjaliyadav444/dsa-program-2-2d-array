@@ -1,52 +1,27 @@
-# Prerequisites
-*.d
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+#include <stdio.h>
 
-# Linker output
-*.ilk
-*.map
-*.exp
+//Compiler version gcc  6.3.0
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+int main()
+{
+  int a[3][3]; // declaration of arrray and size
+  int i,j; // variable
+  int m=0; // variable 
+  for (i=0;i<2;i++){ // nested value for storing values in array 
+  
+    for (j=0; j<2; j++){
+      a[i][j]=m;
+      m++;
+    }
+  }
+   for (i=0;i<2;i++){ // print arrays
+     for(j=0;j<2;j++){
+       printf("%d ",a[i][j]);
+     
+     }
+     printf("\n");
+   }
+   
+  return 0;
+}
